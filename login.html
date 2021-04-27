@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;1,100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+    integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/forms.css">
+    <title>Login</title>
+</head>
+<body>
+    <section class="body">
+    <div class="box">
+        <h1>Login</h1>
+    <form id="personalForm" action="login.html" method="post">
+    <div class="span">
+    <span id="personal">Personal</span>
+    <span onclick="business()">Business</span>
+    </div>
+    <input type="text" name="username" placeholder="Username">
+    <input type="password" name="password" placeholder="Password">
+    <input type="submit" name="login" value="Login">
+    <p>Not yet a member?</p>
+    <a href="register.html">Register now</a>
+    </form>
+
+    <form id="businessForm" action="login.html" method="post">
+        <div class="span">
+        <span onclick="personal()">Personal</span>
+        <span id="business">Business</span>
+        </div>
+        <input type="text" name="bname" placeholder="Business Name">
+        <input type="password" name="bpassword" placeholder="Password">
+        <input type="submit" name="blogin" value="Login">
+        <p>Not yet a member?</p>
+        <a href="register.html">Register now</a>
+        </form>
+    </div>
+    </section>
+    <script src="assets/js/forms.js"></script>
+</body>
+</html>
